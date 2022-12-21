@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad music page</title>
+    <link rel="stylesheet" href="css\loading.css">
+    <link rel="stylesheet" href="css\scrollbar.css">
+    <link rel="stylesheet" href="css/sad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader"></div>
+    <h1>We've noticed you feel...</h1>
+    
+    <h2>Sad</h2>
+    
+    <div class="content">
+        <div class="quote">
+            <h3>"The word happy would lose its meaning if it were not balanced by sadness"</h3>
+            <p>- Carl Jung</p>
+        </div>
+
+        <div class="player">
+        <p>Here is some music that we think you will enjoy</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6nxPNnmSE0d5WlplUsa5L3?utm_source=generator" width="300" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+    <script src="js\loading.js"></script>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm music page</title>
+    <link rel="stylesheet" href="css\loading.css">
+    <link rel="stylesheet" href="css\scrollbar.css">
+    <link rel="stylesheet" href="css\calm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Unbounded:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader"></div>
+
+    <h1>We've noticed you feel...</h1>
+
+    <h2>Calm</h2>
+
+    <div class="content">
+        <div class="quote">
+            <h3>"To be calm is the highest achievement of the self"</h3>
+            <p>- Zen proverb</p>
+        </div>
+
+        <div class="player">
+            <p>Here is some music that we think you will enjoy</p>
+            <iframe class="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2PQDq3PdrHQ" width="300"
+                height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        </div>
+    </div>
+
+    
+    </script>
+        <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+    <script src="js\loading.js"></script>
+</body>
+
+</html>-->

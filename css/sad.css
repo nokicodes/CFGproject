@@ -1,0 +1,47 @@
+body {
+    background-color:rgb(96, 98, 130);
+    min-height: 90vh;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 70px;
+    font-family: 'Bodoni Moda', serif;
+    color:#f6f2f6;
+}
+
+h2 {
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(10deg, #000000, #eeeeee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #000000;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 200px;
+}
+
+.quote p {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 30pt;
+    align-self: center; 
+    padding-top: 100px;
+}
+
+.player p {
+    font-size: 11pt;
+}
+

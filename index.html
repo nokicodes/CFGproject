@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood to music generator</title>
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\scrollbar.css">
+    <link rel="stylesheet" href="css\loading.css">
+    <link rel="stylesheet" href="css\randomButton.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="loader"></div>
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+
+    <h1>How do you feel?</h1>
+    <div class="buttonsection">
+        <a id="calm" href="calm.html" class="button1"><span>Calm</span> </a>
+
+        <a id="energetic" href="energetic.html" class="button2"><span>Energetic</span></a>
+        <a id="sad" href="sad.html" class="button3"><span>Sad</span></a>
+       <!--<button id="sad" class="button3" role="button"><span>Sad</span></button>--> 
+        <a id="happy" href="happy.html" class="button4"><span>Happy</span></a>
+       <!--<button id="happy" class="button4" role="button"><span>Happy</span></button>--> 
+
+        <button id="random" class="randomButton" role="button" onclick="myFunction()"><span>Random</span></button>
+    </div>
+
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+
+    <script src="js\random-btn.js"></script>
+    <script src="js\loading.js"></script>
+
+</body>
+</html>
